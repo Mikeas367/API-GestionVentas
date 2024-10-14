@@ -57,9 +57,7 @@ mvn spring-boot:run
 					"unitPrice": 2500.0,
 					"productStock": 19
 				}
-			]
-```
-
+			]```
 ## Obtener un Producto
 - **URI**: /api/products/{id}
 	- **Metodo** : GET
@@ -71,8 +69,7 @@ mvn spring-boot:run
 					"productName": "Coca-Cola 500ml",
 					"unitPrice": 1500.0,
 					"productStock": 8
-				}
-```
+				}```
 
 ## Nuevo Producto
 **URI**: /api/products
