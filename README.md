@@ -45,19 +45,19 @@ mvn spring-boot:run
 		- **Respuesta**:
 			```Json
 			[
-					{
-						"id": 1,
-						"productName": "Coca-Cola 500ml",
-						"unitPrice": 1500.0,
-						"productStock": 8
-					},
-					{
-						"id": 2,
-						"productName": "Galletita Oreo",
-						"unitPrice": 2500.0,
-						"productStock": 19
-					}
-				]
+				{
+					"id": 1,
+					"productName": "Coca-Cola 500ml",
+					"unitPrice": 1500.0,
+					"productStock": 8
+				},
+				{
+					"id": 2,
+					"productName": "Galletita Oreo",
+					"unitPrice": 2500.0,
+					"productStock": 19
+				}
+			]
 ```
 
 ## Obtener un Producto
@@ -66,12 +66,12 @@ mvn spring-boot:run
 		- **Descripcion**:  Retorna un solo producto con el id indicado en la URI.
 		- **Respuesta**:
 			```Json
-					{
-						"id": 1,
-						"productName": "Coca-Cola 500ml",
-						"unitPrice": 1500.0,
-						"productStock": 8
-					}
+				{
+					"id": 1,
+					"productName": "Coca-Cola 500ml",
+					"unitPrice": 1500.0,
+					"productStock": 8
+				}
 ```
 
 ## Nuevo Producto
@@ -80,21 +80,21 @@ mvn spring-boot:run
 	 - **Descripcion**: Crea un nuevo producto y lo almacena enla base de datos
 	 - **Cuerpo de la solicitud**
 ```Json
-					{
-						"productName": "Coca-Cola 500ml",
-						"unitPrice": 1500.0,
-						"productStock": 8
-					}
+	{
+		"productName": "Coca-Cola 500ml",
+		"unitPrice": 1500.0,
+		"productStock": 8
+	}
 ```
 
 - **Respuesta**
 ```Json
 	{
-    "id": 1,
-    "productName": "Coca-Cola 500ml",
-    "unitPrice": 1500.0,
-    "productStock": 8
-}
+    		"id": 1,
+    		"productName": "Coca-Cola 500ml",
+    		"unitPrice": 1500.0,
+    		"productStock": 8
+	}
 ```
 
 ## NuevaVenta
@@ -104,20 +104,20 @@ mvn spring-boot:run
 	 - **Cuerpo de la solicitud**
 ```Json
 	{
-			"saleDescription": "Venta de prueba",
-			"details": [
+		"saleDescription": "Venta de prueba",
+		"details": [
 				{
-						"product": {
-						"id": 1
-						},
-				"quantity": 2
-				},
-			{
 					"product": {
-					"id": 2
-					},
-				"quantity": 1
-			}
-		]
+							"id": 1
+						},
+					"quantity": 2
+				},
+				{
+					"product": {
+							"id": 2
+						},
+					"quantity": 1
+				}
+			]
 	}
 ```
